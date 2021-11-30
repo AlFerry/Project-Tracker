@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker</title>
+    <!-- Moment, jquery, bootstrap, jquery ui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
+
+    <!-- Apply jQuery UI <link> element here -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header class="jumbotron">
+        <h1>Project Tracker</h1>
+        <h4 id="current-time">Current Time</h4>
+    </header>
+    <main class="row">
+        <div class="card col-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Instructions</h5>
+              <p class="card-text">Click the button below to open a form and provide information for the following:</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Project Name</li>
+              <li class="list-group-item">Project Type</li>
+              <li class="list-group-item">Due Date</li>
+              <li class="list-group-item">Hourly Rate</li>
+            </ul>
+            <div class="card-body">
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <table class="table col-9">
+            <thead>
+              <tr>
+                <th scope="col">Project Name</th>
+                <th scope="col">Project Type</th>
+                <th scope="col">Hourly Rate ($)</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Days Until Due Date</th>
+                <th scope="col">Potential Total Earnings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- moment.js -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
